@@ -28,7 +28,7 @@ end
 
 def turn(board)
   dex = 0.5
-  while valid_move?(board, 0) == false
+  while valid_move?(board, dex) == false
     puts "Please enter 1-9:"
     input = gets
     dex = input_to_index(input)
