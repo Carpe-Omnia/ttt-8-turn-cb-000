@@ -27,7 +27,7 @@ def move(board, index, token='X')
 end
 
 def turn(board)
-  dex = nil
+  dex = 11
   while valid_move?(board, dex) == false
     puts "Please enter 1-9:"
     input = gets
