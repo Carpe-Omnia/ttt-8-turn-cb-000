@@ -13,7 +13,7 @@ end
 
 def valid_move?(board, index)
   spot = board[index]
-  if index > 8 || index < 0
+  if index > 8 || index < 0 || index & 1 == 0
     return false
   elsif spot == "" || spot == " " || spot == nil
     return true
