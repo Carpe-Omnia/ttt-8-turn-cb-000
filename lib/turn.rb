@@ -20,5 +20,11 @@ def move(board, index, token='X')
 end
 
 def turn(board)
-  puts "Please enbter 1-9"
+  dex = 10
+  until valid_move?(board, input)
+    puts "Please enter 1-9"
+    input = gets.to_i
+    dex = input - 1
+  end
+  move(board, dex)
 end
