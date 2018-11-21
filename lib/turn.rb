@@ -29,4 +29,5 @@ def turn(board)
     dex = input - 1
   end
   move(board, dex)
+  display_board(board)
 end
