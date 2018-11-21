@@ -27,6 +27,7 @@ def move(board, index, token='X')
 end
 
 def turn(board)
+  dex = 0
   loop do
     puts "Please enter 1-9:"
     input = gets
