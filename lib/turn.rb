@@ -5,3 +5,12 @@ def display_board(board)
   puts "-----------"
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
+
+def valid_move?(board, index)
+  spot = board[index]
+  if spot == "" || spot == " " || spot == nil
+    return true
+  else
+    return false
+  end
+end      
