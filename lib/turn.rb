@@ -21,7 +21,7 @@ end
 
 def turn(board)
   dex = 10
-  until valid_move?(board, input)
+  until valid_move?(board, dex)
     puts "Please enter 1-9"
     input = gets.to_i
     dex = input - 1
