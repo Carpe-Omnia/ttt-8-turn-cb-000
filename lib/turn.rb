@@ -27,11 +27,11 @@ def move(board, index, token='X')
 end
 
 def turn(board)
-  dex = 0.5
-  while valid_move?(board, dex) == false
+  loop do
     puts "Please enter 1-9:"
     input = gets
     dex = input_to_index(input)
+  break if valid_move?(board, dex)
   end
   move(board, dex)
   display_board(board)
