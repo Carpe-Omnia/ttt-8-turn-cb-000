@@ -30,8 +30,8 @@ def turn(board)
   dex = 10
   until valid_move?(board, dex)
     puts "Please enter 1-9:"
-    input = gets.to_i
-    dex = input - 1
+    input = gets
+    dex = input_to_index(input)
   end
   move(board, dex)
   display_board(board)
