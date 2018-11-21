@@ -17,4 +17,8 @@ end
 
 def move(board, index, token='X')
   board[index] = token
-end  
+end
+
+def turn(board)
+  puts "Please enbter 1-9"
+end
